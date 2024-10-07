@@ -40,7 +40,7 @@ def get_power(id):
 def create_hero_power():
     data = request.json
     try:
-        # Check if required fields exist in the request data
+        # Checking if the field exist in the data
         if 'strength' not in data or 'hero_id' not in data or 'power_id' not in data:
             raise ValueError("Missing required fields")
 
