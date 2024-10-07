@@ -1,6 +1,6 @@
-from flask import Flask, jsonify, request
+from flask import Flask, jsonify, request #type: ignore
 from models import db, Hero, Power, HeroPower
-from flask_migrate import Migrate
+from flask_migrate import Migrate #type: ignore
 
 # Initialize Flask app
 app = Flask(__name__)
@@ -64,4 +64,4 @@ def update_power(id):
         return jsonify({"errors": [str(e)]}), 400
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(port=5555, debug=True)  # Set the port to 5555
