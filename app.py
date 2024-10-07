@@ -4,7 +4,7 @@ from flask_migrate import Migrate #type: ignore
 
 # Initialize Flask app
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///heroes.db'  # Or your preferred DB
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///heroes.db' 
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 # Initialize SQLAlchemy and Flask-Migrate
