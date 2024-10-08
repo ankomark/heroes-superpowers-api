@@ -82,7 +82,7 @@ Create a virtual environment to keep dependencies isolated.
 ## database
 
 This project uses SQLite for database management. The database stores information about heroes and their superpowers
-
+¬
 
 
 ## api-endpoints
